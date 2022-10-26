@@ -1,0 +1,25 @@
+package ch05;
+
+public class MyInformation {
+	
+	private String name;
+	private String resident;
+	private String phonenumber;
+	private String address;
+	private int property;
+	
+	
+	
+	
+	
+	
+	
+	public void showinfo() {
+		System.out.println("이름 : "+name);
+		System.out.println("주민번호 : "+resident);
+		System.out.println("전화번호 : "+phonenumber);
+		System.out.println("주소 : "+address);
+		System.out.println("자산 : "+property);
+	}
+
+}

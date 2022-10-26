@@ -1,0 +1,16 @@
+package ch10;
+
+public class MainTest1 {
+
+	public static void main(String[] args) {
+		
+		Employee employee1 = new Employee("홍길동", 22, "기획");
+		Employee employee2 = new Employee("홍길동", 40, "인사");
+		Employee employee3 = new Employee("홍길동", 52, "개발");
+		Employee employee4 = new Employee("홍길동", 34, "생산");
+		Employee employee5 = new Employee("홍길동", 27, "영업");
+		Employee employee6 = new Employee("홍길동", 45, "마케팅");
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package ch10;
+
+public class Employee {
+	
+	public static int serialNumber = 1000;
+
+	private int employeeId;
+	private String employeeName;
+	private int employeeOld;
+	private String department;
+	
+	public Employee(String employeeName, int employeeOld, String department) {
+		
+	}
+}

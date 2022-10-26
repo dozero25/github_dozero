@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class BaekJoon5 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int num1 = 0;
+		int num2 = 0;
+		
+		System.out.print("첫번째 숫자를 입력하세요 : ");
+		num1 = scanner.nextInt();
+		System.out.print("두번째 숫자를 입력하세요 : ");
+		num2 = scanner.nextInt();
+		
+		if(num1 > 0 && num2 >0) {
+			System.out.println("("+num1+", "+num2+")"+", 1사분면 입니다.");
+		}else if(num1 < 0 && num2 >0) {
+			System.out.println("("+num1+", "+num2+")"+", 2사분면 입니다.");
+		}else if(num1 < 0 && num2 <0) {
+			System.out.println("("+num1+", "+num2+")"+", 3사분면 입니다.");
+		}else if(num1 > 0 && num2 <0) {
+			System.out.println("("+num1+", "+num2+")"+", 4사분면 입니다.");
+		}
+		
+
+	}
+
+}

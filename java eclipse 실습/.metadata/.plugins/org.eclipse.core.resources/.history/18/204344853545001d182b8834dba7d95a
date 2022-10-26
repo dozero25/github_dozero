@@ -1,0 +1,71 @@
+package ch05;
+
+public class MyInformation {
+
+	private String name;
+	private String resident;
+	private String phonenumber;
+	private String address;
+	private int property;
+
+//	public MyInformation(String n, String r, String p, String a, int pr) {
+//		this.name = n;
+//		this.resident = r;
+//		this.phonenumber = p;
+//		this.address = a;
+//		this.property = pr;
+//		}
+	// getter
+	
+
+	public String getName(String name) {
+		return this.name;
+	}
+
+	public String getResident(String resident) {
+		return this.resident;
+	}
+
+	public String getPhoneNumber(String phonenumber) {
+		return this.phonenumber;
+	}
+
+	public String getAddress(String address) {
+		return this.address;
+	}
+
+	public int getProperty(int property) {
+		return this.property;
+	}
+
+	// setter
+	public String setName(String name) {
+		return this.name;
+	}
+
+	public String setResident(String resident) {
+		return this.resident;
+	}
+
+	public String setPhoneNumber(String phonenumber) {
+		return this.phonenumber;
+	}
+
+	public String setAddress(String address) {
+		return this.address;
+	}
+
+	public int setProperty(int property) {
+		return this.property;
+	}
+	
+
+	public void showinfo() {
+		System.out.println("이름 : " + name);
+		System.out.println("주민번호 : " + resident);
+		System.out.println("전화번호 : " + phonenumber);
+		System.out.println("주소 : " + address);
+		System.out.println("자산 : " + property);
+	}
+
+}

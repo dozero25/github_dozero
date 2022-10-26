@@ -1,0 +1,13 @@
+package ch05;
+
+public class MyInformation {
+	
+	private String name;
+	private String resident;
+	private String phonenumber;
+	private String address;
+	private int property;
+	
+	
+
+}

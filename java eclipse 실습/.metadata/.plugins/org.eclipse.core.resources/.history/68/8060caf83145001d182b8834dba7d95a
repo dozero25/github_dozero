@@ -1,0 +1,11 @@
+package ch05;
+
+public class Input {
+
+	public static void main(String[] args) {
+		
+		MyInformation information1= new MyInformation();
+
+	}
+
+}

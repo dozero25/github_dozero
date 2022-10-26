@@ -1,0 +1,21 @@
+package ch05;
+
+public class Input {
+
+	public static void main(String[] args) {
+
+		MyInformation information = new MyInformation();
+		// 기본 값 세팅
+
+		// information1 정보입력
+		information.setName("김두환");
+		information.setResident("990125-1******");
+		information.setPhoneNumber("010-1111-2222");
+		information.setAddress("부산 서면");
+		information.setProperty(1_000_000_000);
+
+		information.showinfo();
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package ch05;
+
+public class Input {
+
+	public static void main(String[] args) {
+		
+		MyInformation information1= new MyInformation();
+		//기본 값 세팅
+		
+		information1.getName();
+		information1.getResident();
+		information1.getPhoneNumber();
+		information1.getAddress();
+		information1.getProperty();
+		
+		
+
+	}
+
+}

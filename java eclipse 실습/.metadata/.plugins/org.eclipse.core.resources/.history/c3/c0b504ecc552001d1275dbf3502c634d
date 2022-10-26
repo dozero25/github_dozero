@@ -1,0 +1,30 @@
+package ch11;
+
+import java.util.Scanner;
+
+public class BackJun01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a;
+		int b;
+		
+		System.out.println("숫자 a를 입력하세요 : ");
+		a = sc.nextInt();
+		System.out.println("숫자 b를 입력하세요 : ");
+		b = sc.nextInt();
+		
+		if(a > b) {
+			System.out.println(">");
+		}
+		else if(a < b) {
+			System.out.println("<");
+		}
+		else {
+			System.out.println("==");
+		}
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package ch05;
+
+public class MyInformation {
+	
+	private String name;
+	private String resident;
+	
+
+}

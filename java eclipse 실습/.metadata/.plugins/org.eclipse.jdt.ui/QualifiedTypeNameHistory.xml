@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javax.naming.ldap.StartTlsRequest"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.events.StartDocument"/>
+    <fullyQualifiedTypeName name="javax.xml.stream.events.StartElement"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="ch04.Rpg"/>
+    <fullyQualifiedTypeName name="ch06.Barrack"/>
+    <fullyQualifiedTypeName name="ch06.Marine"/>
+    <fullyQualifiedTypeName name="ch06.Zergling"/>
+    <fullyQualifiedTypeName name="ch06.Hatchery"/>
+    <fullyQualifiedTypeName name="ch06.GateWay"/>
+    <fullyQualifiedTypeName name="ch06.Fight"/>
+    <fullyQualifiedTypeName name="ch07.Student"/>
+    <fullyQualifiedTypeName name="ch07.Card"/>
+    <fullyQualifiedTypeName name="ch06.Zealot"/>
+    <fullyQualifiedTypeName name="ch09.Terran"/>
+    <fullyQualifiedTypeName name="ch09.Unit"/>
+    <fullyQualifiedTypeName name="ch09.Zerg"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

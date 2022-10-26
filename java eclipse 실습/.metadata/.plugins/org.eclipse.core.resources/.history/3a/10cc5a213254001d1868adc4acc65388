@@ -1,0 +1,16 @@
+package ch11;
+
+import java.util.Scanner;
+
+public class BaekJoon05 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int hour = 0;
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
