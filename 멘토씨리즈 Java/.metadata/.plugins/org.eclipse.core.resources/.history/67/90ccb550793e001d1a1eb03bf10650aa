@@ -1,0 +1,36 @@
+package day48;
+
+import javax.swing.*;
+
+public class MenuTest extends JFrame{
+	MenuTest(){
+		setTitle("Menu 만들기");
+		createMenu();
+		setSize(250,200);
+		setVisible(true);
+	}
+	public void createMenu() {
+		//메뉴바 생성
+		JMenuBar mb = new JMenuBar();
+		//메뉴 생성
+		JMenu screenMenu = new JMenu("메뉴바1");
+		
+		//메뉴에 부착할 아이템 생성
+		screenMenu.add(new JMenuItem("Load"));
+		screenMenu.add(new JMenuItem("Hide"));
+		screenMenu.add(new JMenuItem("ReShow"));
+		screenMenu.addSeparator();;
+		screenMenu.add(new JMenuItem("Exit"));
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+	
+	}
+
+}

@@ -1,0 +1,24 @@
+package day48;
+
+import java.awt.event.*;
+import javax.swing.*;
+
+class Listener1 implements ActionListener{
+	@Override
+	public void actionPerformed(ActionEvent e) {//어떤 컴포넌트가 액션이 생길 때 발생
+		JButton button = (JButton)e.getSource();//이벤트 발생한 컴포넌트
+		button.setText("버튼 클릭"); //버튼 문자열 재지정
+		
+		
+		
+	}
+	
+}
+public class AddFrame2 extends JFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
