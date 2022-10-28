@@ -1,15 +1,15 @@
 package J11_배열.StudentManagement;
-public class StudentManagement {
-    private Student[] students;
 
-    public StudentManagement() {
+public class StudentRepository {
+    private Student[] students;
+    public StudentRepository() {
         students = new Student[0];
     }
     public void addStudent(Student student) {
         int index = indexOfEmpty();
 
         if(index == -1){
-           index =  increaseArray();
+            index =  increaseArray();
         }
         students[index] = student;
     }
@@ -28,6 +28,10 @@ public class StudentManagement {
         }
         students = tempArray;
 
-        return tempArray.length -1; // 마지막에 비어있는 index의 번호
+        return students.length -1; // 마지막에 비어있는 index의 번호
     }
+    public Student[] getStudents(){
+        return students;
+    }
+
 }

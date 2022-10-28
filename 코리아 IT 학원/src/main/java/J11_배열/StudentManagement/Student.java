@@ -1,7 +1,6 @@
 package J11_배열.StudentManagement;
 
 public class Student { //정보를 담는 장소 : 엔티티 (Entity)
-
     private String name;
     private int kor;
     private int eng;
@@ -18,7 +17,6 @@ public class Student { //정보를 담는 장소 : 엔티티 (Entity)
 
         calculation();
     } // 생성자를 통한 주입
-
     private void calculation(){
         setTotalScore();
         setAvgScore();
@@ -43,7 +41,6 @@ public class Student { //정보를 담는 장소 : 엔티티 (Entity)
             grade = 'F';
         }
     }
-
     public void showStudentInfo(){
         System.out.println("[학생 정보 출력]");
         System.out.println("이름 : "+ name);
