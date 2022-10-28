@@ -11,5 +11,6 @@ public class StudentManagementApplication {
         studentService.registerStudent();
         studentService.registerStudent();
         studentService.showStudents();
+        studentService.showStudent();
     }
 }

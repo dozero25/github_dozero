@@ -37,4 +37,19 @@ public class StudentService {
        }
     }
 
+    public void showStudent(){
+        String name;
+        System.out.println("[학생 정보 이름으로 조회]");
+        System.out.print("이름을 입력하세요 : ");
+        name = scanner.nextLine();
+
+       int index = studentRepository.findStudnetByName(name);
+       if(index == -1){
+           System.out.println("입력한 이름의 학생은 등록되어 있지 않습니다.");
+           return;
+       }
+       studentRepository.getStudents(index).showStudentInfo();
+       //Repository에서  getStudents를 하면 학생의 정보를 보여준다.
+    }
+
 }

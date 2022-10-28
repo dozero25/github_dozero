@@ -51,5 +51,7 @@ public class Student { //정보를 담는 장소 : 엔티티 (Entity)
 
     }
 
-
+    public String getName() {
+        return name;
+    }
 }

@@ -34,4 +34,19 @@ public class StudentRepository {
         return students;
     }
 
+    public int findStudnetByName(String name){
+        for(int i = 0; i <students.length; i++){ // 문자열 비교 equals
+            if(students[i] != null){
+                if(students[i].getName().equals(name)){
+                    return i; // 여기 이 번호에 들어 있다.
+                }
+            }
+        }
+        return -1;
+    }
+    //학생의 위치를 배열에서 꺼내줘야함
+    public Student getStudents(int index){
+        return students[index];
+    }
+
 }
