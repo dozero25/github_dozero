@@ -49,4 +49,15 @@ public class StudentRepository {
         return students[index];
     }
 
+    public Student removeStudent(int index){
+        Student student = students[index];
+        students[index] = null;
+        return student;
+    }
+    public Student updateStudent(int index, Student upadateStudent){
+        Student student = students[index];
+        student.updateStudent(upadateStudent);
+        return student;
+    }
+
 }
