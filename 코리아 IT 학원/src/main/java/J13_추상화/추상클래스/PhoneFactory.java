@@ -15,4 +15,9 @@ public class PhoneFactory extends Factory{ // 구현을 해야하는 강제성�
     public void management() {
         System.out.println("휴대폰 공장을 관리합니다.");
     }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
 }
