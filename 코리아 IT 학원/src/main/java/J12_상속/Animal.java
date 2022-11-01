@@ -9,7 +9,6 @@ public class Animal {
         this.name = name;
     }
 
-
     public void move(){ // 공통으로 사용되는 메서드를 상속
         System.out.println("움직입니다.");
     }

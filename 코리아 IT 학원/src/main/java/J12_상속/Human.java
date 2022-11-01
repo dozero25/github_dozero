@@ -4,7 +4,6 @@ public class Human extends Animal{
 
     public Human(String name){
         super(name); // super : 부모의 주소를 가리킨다. super. 하면 부모가 가진 객체에 접근한다.
-        super.move();
         // 부모 생성자가 항상 기본적으로 생략되어있다.
         System.out.println("Human 생성");
         // Human이 존재해야 나올 수 있는데 부모의 생성이 거치지 않았는데 실행을 할 수 없다.
@@ -25,8 +24,13 @@ public class Human extends Animal{
         System.out.println("두 발로 걷습니다.");
     }
 
+    @Override
+    public String getName() {
+        return super.getName();
+    }
 
-
-
-
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
 }
