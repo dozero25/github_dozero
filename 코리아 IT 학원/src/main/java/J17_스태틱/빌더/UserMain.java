@@ -14,7 +14,7 @@ public class UserMain {
 
         System.out.println(user2);
 
-       User u = user2.to();
+       User2 u = user2.to();
         System.out.println(u);
     }
 
