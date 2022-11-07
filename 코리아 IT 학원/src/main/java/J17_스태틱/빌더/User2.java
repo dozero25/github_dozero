@@ -11,8 +11,8 @@ public class User2 {
     private String email;
     private String name;
 
-    public User2 to(){ // User2 클래스가 User 클래스로 변하게 된다.
-        return User2.builder()
+    public User to(){ // User2 클래스가 User 클래스로 변하게 된다.
+        return User.builder()
                 .username(username)
                 .password(password)
                 .email(email)
