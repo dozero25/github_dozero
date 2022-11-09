@@ -18,6 +18,7 @@ public class StudentSetHome {
             1. 김혜진 학생의 학번을 출력하세요.
             2. 20220004 학번을 가진 학생의 이름을 설민수로 변경하세요.
             3. 20220001 학번이 존재하면 해당 학생을 삭제하세요.
+
             set -> list 로 변환
             해당 list를 학번에 순서에 맞게  정렬하시오
 
@@ -56,6 +57,19 @@ public class StudentSetHome {
             }
         }
         System.out.println(students);
+
+        // set을 list로 변환
+        // 그리고 list를 순서에 맞게 정렬
+        List<Student> studentList = new ArrayList<>(students);
+
+        System.out.println(studentList);
+
+      
+
+
+
+
+
 
 
 
