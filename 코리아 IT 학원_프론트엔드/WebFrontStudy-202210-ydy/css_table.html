@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 스타일</title>
+</head>
+<style>
+    table {
+        /* 글꼴 두께 / 라인의 종류 / 라인의 색생 -> 순서 지키기 */
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 400px;
+    }
+    /* 같은 속성을 적용 시켜서 , 사용 */
+    th, td {
+        border: 1px solid black;
+        font-weight: 700;
+        text-align: center;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>연락처</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>윤도영</td>
+            <td>01011111111</td>
+            <td>김해</td>
+        </tr>
+        <tr>
+            <td>윤도일</td>
+            <td>01022222222</td>
+            <td>진주</td>
+        </tr>
+        <tr>
+            <td>윤도이</td>
+            <td>01033333333</td>
+            <td>사천</td>
+        </tr>
+    </table>
+</body>
+</html>
