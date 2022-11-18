@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <style>
+        .box1 {
+            box-sizing: border-box;
+            /* content-box 서로 기준을 border로 할지 content 로 할지*/ 
+
+            margin-left: 10px;
+            /* margin은 전부 따로 줄 수 있다. */
+
+            border: 1px solid red;
+            /* border은 무조건 네방향 전부 같다. */
+            
+            padding : 5px;
+            /* top right bottom만 했을 경우 자동으로 left에 right 대칭으로 생겨난다. 
+            border과 margin에도 똑같이 적용된다.*/
+
+            width: 200px;
+            height: 200px;
+
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class = "box1"></div>
+</body>
+</html>
