@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakaologin</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    .all {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .doc-title {
+        padding-top: 50px;
+    }
+    .logo_kakao {
+        display: block;
+        width: 88px;
+        height: 88px;
+        margin: 0 auto;
+        background: #fff url(/images/logo_kakao.png) no-repeat 0 0;
+        background-size: 100px 80px;
+        font-size: 19px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .kakaotitle {
+        display: black;
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        height: 100%;
+        box-sizing: border-box;
+        width: 580px;
+        height: 420px;
+        margin: 40px auto 40px;
+        padding: 0 69px;
+        border: 1px solid gray   
+    }
+    .login-page {
+        word-wrap: break-word;
+        position: relative;
+        padding: 55px 0 50px;
+    }
+    .login-page1{
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    .box {
+        margin-top: 40px;
+        position: relative;
+        margin-bottom: 3px;
+        border: solid #ccc;
+
+    }
+    .box1 {
+        position: relative;
+        margin-bottom: 3px;
+        border: solid #ccc;
+        border-width: 0 0 2px;
+    }
+    .box1_id {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 45px;
+        padding: 10px 0 8px;
+        border: 0;
+        font-size: 18px;
+        line-height: 25px;
+        color: #191919;
+        background-color: transparent;
+        letter-spacing: 0;
+        box-sizing: border-box;
+        outline: 0 none;
+        caret-color: #191919;
+        opacity: 1;
+    }
+    .box2 {
+        position: relative;
+        margin-bottom: 3px;
+        border: solid #ccc;
+        border-width: 0 0 2px;
+    }
+    .box2_pw {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 45px;
+        padding: 10px 0 10px;
+        border: 0;
+        font-size: 18px;
+        line-height: 25px;
+        color: #191919;
+        background-color: transparent;
+        letter-spacing: 0;
+        box-sizing: border-box;
+        outline: 0 none;
+        caret-color: #191919;
+        opacity: 1
+    }
+    .confirm {
+        padding-top: 40px;
+        text-align: center;
+    }
+    .login_but {
+        background-color: #fee500;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 4px;
+        border: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 51px;
+        color: #191919;
+    }
+    .txt_or{
+        font-size: 12px;
+        line-height: 18px;
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+        color: #828282;
+    }
+    .qr_login_but{
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 51px;
+        color: #191919;
+        background-color: #f0f0f0;
+    }
+    .box4 {
+        margin-top: 26px;
+        display: block;
+        word-wrap: break-word;
+    }
+    .sign_up{
+        float: left;
+        font-size: 12px;
+        color: #191919;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .list_user {
+        float : right;
+    }
+    .id_search {
+        float: left;
+        font-size: 12px;
+        color: #191919;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    .pw_search {
+        float: right;
+        font-size: 12px;
+        color: #191919;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    ul{
+        display: block;
+        margin-block-start: 0.5px;
+        margin-block-end: 1px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    li{
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: list-item;
+    }
+    .bin {
+        padding: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="all">
+    <div class = "title">
+        <div class ="doc-title">
+            <strong class="title_service" aria-hidden="true">
+                <span class="logo_kakao">
+                    <span class="kakaotitle"></span>
+                </span>
+            </strong>
+        </div>
+    </div>
+    <article class="content">
+        <div class="login-page">
+            <div class="login-page1">
+                <form>
+                    <div>
+                        <div class="confirm">
+                            <div class="box1">
+                                <label class="screen_out" for="input-loginKey"></label>
+                                <input class="box1_id" placeholder="카카오메일 아이디, 이메일, 전화번호" id="input-loginKey" type="text" name="loginKey" value>
+                            </div>
+                            <div class="box2">
+                                <label class="screen_out" for="input-password"></label>
+                                <input placeholder="비밀번호" autocomplete="off" class="box2_pw" id="input-password" type="password" value>
+                            </div>
+                            <div class="box3">
+                                <button type="submit" class="login_but">로그인</button>
+                                <span class="line_or">
+                                    <!-- ::before -->
+                                    <span class="txt_or">또는</span>
+                                    <!-- ::after -->
+                                </span>
+                                <button type="button" class="qr_login_but">QR코드 로그인</button>
+                            </div>
+                    </div>
+                        <div class="box4">
+                            <a href="" class="sign_up">회원가입</a>
+                            <ul class="list_user">
+                                <li>
+                                    <a href="" class="id_search">계정 찾기</a>
+                                </li>
+                                <li>
+                                    <span class="bin"></span>
+                                    <a href="" class="pw_search">비밀번호 찾기</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </article>
+    </div>
+    
+    
+</body>
+</html>
