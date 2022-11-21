@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-size: 14px;
+}
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+
+}
+aside{
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 390px;
+    height: 100%;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.192);
+
+    background-color: white;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+header{
+    height: 116px;
+
+    background-color: #258fff;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 11px;
+    height: 54px;
+
+    background-color: #258fff;
+
+    list-style-type: none;
+}
+.menu li{
+    padding: 12px 9px;
+}
+.mainmenutab{
+    display: inline-block;
+    padding: 4px 0px 7px;
+
+    width: 56px;
+    height: 30px;
+
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+.tab-selected{
+    border-radius: 5px;
+    background-color: #1467dd;
+    font-weight: 700;
+}
