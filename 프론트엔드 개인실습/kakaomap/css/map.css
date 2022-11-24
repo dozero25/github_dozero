@@ -455,6 +455,31 @@ li {
     font-size: 11px;
     color: #ffffff;
     background-color: #3396ff;
+}
+.toggle-button {
+    position: absolute;
+    top: 50%;
+    right: -18px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0px;
+    width: 18px;
+    height: 50px;
+
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    font-size: 10px;
+    color: #258fff;
+    line-height: 0px;
+    transform: translateY(-50%);
+
+    cursor: pointer;
 }
 
