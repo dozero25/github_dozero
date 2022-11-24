@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"> 
+        <!-- id 하나만, 전체 틀의 경우는 id를 사용한다. -->
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <!-- class 중복으로 디자인을 바꿀 때 사용 -->
+        <h1>A</h1>
+        <h1>B</h1>
+        <h1>C</h1>
+        <h1>D</h1>
+    </div>
+
+    <script>
+        const a = document.getElementById("container");
+        const box1 = document.getElementsByClassName("box")[0]; // 이거 자체가 배열이 된다.
+        const h1 = document.getElementsByTagName("h1")[2];
+
+        box1.onclick = () => {
+            alert("box1을 클릭하셨습니다.");
+        }
+       
+        h1.onclick = () => {
+            alert(h1.textContent); // 안에 들어 있는 text값
+        }
+    </script>
+</body>
+</html>
