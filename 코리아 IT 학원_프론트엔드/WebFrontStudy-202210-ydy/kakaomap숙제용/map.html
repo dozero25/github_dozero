@@ -8,8 +8,7 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1c3c61bea35c893ae9c9e4e5fa72ea5c&libraries=services, clusterer, drawing"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/kakaomap/images/favicon.png">
-    <link rel="stylesheet" href="/kakaomap숙제용/css/kakaomap.css">
-    <link rel="stylesheet" href="/kakaomap숙제용/css/map.css">
+    <link rel="stylesheet" href="/kakaomap/css/map.css">
 </head>
 
 <body>
@@ -26,142 +25,147 @@
                     <label for="my-location" class="my-location-label">현 지도 내 장소검색</label>
                     </div>
                 </div>
-                <div class="search">
-                    <input type="text" class="search-input" placeholder="장소, 주소, 버스 검색">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                <div class="search-container">
+                    <div class="search">
+                        <input type="text" class="search-input" placeholder="장소, 주소, 버스 검색">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search-recent invisible-recent">
+                        <div class="title-recent">
+                            히스토리가 없습니다.
+                        </div>
+                        <ul class="list-recent"></ul>
+                        <div class="favorite-recent">
+                            <button type="button" class="button-recentoff">히스토리 끄기</button>
+                        </div>
+                    </div>
+                </div> 
             </header>
-            <ul class="menu">
-                <li><a href=""class="mainmenutab tab-selected">검색</a></li>
-                <li><a href=""class="mainmenutab">길찾기</a></li>
-                <li><a href=""class="mainmenutab">버스</a></li>
-                <li><a href=""class="mainmenutab">지하철</a></li>
-                <li><a href=""class="mainmenutab">MY</a></li>
-            </ul>
-            <div class="report-error">
-                <h3 class="screen-out">현재위치</h3>
-                <span id="info.location.approAddr" class="approxAddr">김해시 장유3동</span>
-                <div id="info.location.weather" class="infoAir">
-                    <strong class="screen-out">날씨정보</strong>
-                    <span class="txt-air">구름조금</span>
-                    <span class="temper">19°</span>
-                    <span class="txt-change">어제보다 4℃ 높아요</span>
-                    <span class="txt-bar"></span>
-                    <span class="txt-dust">
-                        미세
-                        <span class="txt-state2">좋음</span>
-                    </span>
-                    <span class="txt-dust">
-                        초미세
-                        <span  class="txt-state3">좋음</span>
-                    </span>
-                </div>
-                <a href="" class="reportbug" >오류신고</a>
-            </div>
-            <div class="info">
-                <h3 class="title-around">주변 탐색</h3>
-                <ul class="list-around">
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-mug-saucer"></i></div>
-                            <span class="button-title">카페</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-bus-simple"></i></div>
-                            <span class="button-title">버스</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-train-subway"></i></div>
-                            <span class="button-title">지하철</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-bed"></i></div>
-                            <span class="button-title">숙박</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-sack-dollar"></i></div>
-                            <span class="button-title">은행</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-shop"></i></div>
-                            <span class="button-title">편의점</span>
-                        </button>
-                    </li>
+            <div class="info-body">
+
+                <ul class="menu">
+                    <li><a href="javascript:void(0);" class="mainmenutab tab-selected">검색</a></li>
+                    <li><a href="javascript:void(0);" class="mainmenutab">길찾기</a></li>
+                    <li><a href="javascript:void(0);" class="mainmenutab">버스</a></li>
+                    <li><a href="javascript:void(0);" class="mainmenutab">지하철</a></li>
+                    <li><a href="javascript:void(0);" class="mainmenutab">MY</a></li>
                 </ul>
-            </div>
-            <div class="favorite">
-                <div class="favorite-exposed">
-                    <h3 class="title-myfavorite">
-                        <a href="" class="link-myfavorite">즐겨찾기 </a>
-                    </h3>
-                    <ul class="list-registerated">
-                        <li class>
-                        <div class="favorite-registerated">
-                                <a href="#" class="link-registerated">
-                                    <span class="ico-pin icon-home"><i class="fa-solid fa-house"></i></span>
-                                    <span class="txt-personal">집 주소를 등록하세요.</span>
-                                    
-                                </a>
-                            </div>
+                <div class="report-error">
+                    <h3 class="screen-out">현재위치</h3>
+                    <span id="info.location.approAddr" class="approxAddr">김해시 장유3동</span>
+                    <div id="info.location.weather" class="infoAir">
+                        <strong class="screen-out">날씨정보</strong>
+                        <span class="txt-air">구름조금</span>
+                        <span class="temper">19°</span>
+                        <span class="txt-change">어제보다 4℃ 높아요</span>
+                        <span class="txt-bar"></span>
+                        <span class="txt-dust">
+                            미세
+                            <span class="txt-state2">좋음</span>
+                        </span>
+                        <span class="txt-dust">
+                            초미세
+                            <span  class="txt-state3">좋음</span>
+                        </span>
+                    </div>
+                    <a href="" class="reportbug" >오류신고</a>
+                </div>
+                <div class="info">
+                    <h3 class="title-around">주변 탐색</h3>
+                    <ul class="list-around">
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-utensils"></i></div>
+                                <span class="button-title">음식점</span>
+                            </button>
                         </li>
-                        <li class>
-                        <div class="favorite-registerated">
-                                <a href="#" class="link-registerated">
-                                    <span class="ico-pin icon-company"><i class="fa-solid fa-building"></i></span>
-                                    <span class="txt-personal">회사 주소를 등록하세요.</span>
-                                    
-                                </a>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+                                <span class="button-title">카페</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-bus-simple"></i></div>
+                                <span class="button-title">버스</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-train-subway"></i></div>
+                                <span class="button-title">지하철</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-bed"></i></div>
+                                <span class="button-title">숙박</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                                <span class="button-title">은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-shop"></i></div>
+                                <span class="button-title">편의점</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="favorite">
+                    <div class="favorite-exposed">
+                        <h3 class="title-myfavorite">
+                            <a href="" class="link-myfavorite">즐겨찾기 </a>
+                        </h3>
+                        <ul class="list-registerated">
+                            <li class>
+                            <div class="favorite-registerated">
+                                    <a href="#" class="link-registerated">
+                                        <span class="ico-pin icon-home"><i class="fa-solid fa-house"></i></span>
+                                        <span class="txt-personal">집 주소를 등록하세요.</span>
+                                        
+                                    </a>
+                                </div>
+                            </li>
+                            <li class>
+                            <div class="favorite-registerated">
+                                    <a href="#" class="link-registerated">
+                                        <span class="ico-pin icon-company"><i class="fa-solid fa-building"></i></span>
+                                        <span class="txt-personal">회사 주소를 등록하세요.</span>
+                                        
+                                    </a>
                             </div>
-                            </li> 
-                        </ul>
+                                </li> 
+                            </ul>
                     </div>
+                        
                 </div>
-                <div class="newpalce">
-                    <div class="newPlace">
-                        <h6 class="title-newpalce">새로운 장소</h6>
-                        <p class="desc-newpalce">
-                            새로운 수정된 장소를 알고 계세요?<br>
-                            장소 제안은 지도 품질 향상에 큰 도움이 됩니다.
-                        </p>
-                        <a href="" class="link-newplace">신규 장소 등록</a>
+                   
+                    <div class="newpalce">
+                        <div class="newPlace">
+                            <h6 class="title-newpalce">새로운 장소</h6>
+                            <p class="desc-newpalce">
+                                새로운 수정된 장소를 알고 계세요?<br>
+                                장소 제안은 지도 품질 향상에 큰 도움이 됩니다.
+                            </p>
+                            <a href="" class="link-newplace">신규 장소 등록</a>
+                        </div>
                     </div>
-                </div>
+                    <div class="search-body invisible-body">길찾기 화면</div>
+                    <div class="search-body invisible-body">버스찾기 화면</div>
+                    <div class="search-body invisible-body">지하철찾기 화면</div>
+                    <div class="search-body invisible-body">MY 화면</div>
+            </div>
+                   
+                <button type="button" class="toggle-button">◀</button>
             </aside>
         <div id="map"></div>
     </div>
-    
-    <script>
-        var container = document.getElementById('map'); 
-        var options = { 
-	    center: new kakao.maps.LatLng(33.450701, 126.570667),
-	    level: 3 
-        };
-
-    var map = new kakao.maps.Map(container, options); 
-    </script>
-    <script>
-        var mapTypeControl = new kakao.maps.MapTypeControl();
-
-        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-
-        var zoomControl = new kakao.maps.ZoomControl();
-        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-    </script>
+    <script src="/kakaomap/js/map.js"></script>
 </body>
 </html>
