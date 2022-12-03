@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+
+	table {
+		margin:300px auto;
+		
+		border : 1px solid black;
+		border-collapse : collapse;
+		width : 400px;
+	}
+
+	td {
+		border : 1px solid black;
+		height: 50px;
+		
+		text-align: center;
+	}
+	input{
+		border : none;
+		outline : none;
+		
+		width : 100%;
+		height: 100%;
+		
+		text-align: center;
+	}
+	
+	button {
+		width: 100%;
+		height: 100%;
+		
+		cursor: pointer;
+	}
+	
+
+
+</style>
+
+
+</head>
+<body>
+	<form action="/auth/register" method="post">
+	<table>
+		<tr>
+			<td>
+				회원가입
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="username" placeholder="사용자 이름" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="password" name="password" placeholder="비밀번호" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="name" placeholder="성명" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="email" name="email" placeholder="이메일" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="submit">가입하기</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="button">로그인으로 돌아가기</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+
+</body>
+</html>
