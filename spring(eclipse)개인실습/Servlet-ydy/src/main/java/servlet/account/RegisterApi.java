@@ -15,12 +15,12 @@ import service.AccountService;
 import util.DTO;
 
 
-@WebServlet("/auto/register")
+@WebServlet("/auth/register")
 public class RegisterApi extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Map<String, String> registerParams =  DTO.getParams(request);
+		Map<String, String> registerParams = DTO.getParams(request);
 		AccountService accountService = AccountService.getInstance();
 		
 		if(accountService.isDuplicateUsername(registerParams.get("username"))) {

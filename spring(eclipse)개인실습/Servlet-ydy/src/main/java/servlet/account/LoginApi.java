@@ -16,7 +16,7 @@ import util.DTO;
 /**
  * Servlet implementation class LoginApi
  */
-@WebServlet("/auto/login")
+@WebServlet("/auth/login")
 public class LoginApi extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
