@@ -1,7 +1,5 @@
 package 정리;
 
-import org.codehaus.groovy.transform.SourceURIASTTransformation;
-
 public class 캡슐화 {
     /*
             캡슐화
@@ -20,7 +18,6 @@ public class 캡슐화 {
         */
 
     // ex1)
-
     public void registerStudent(){ // 밖으로 보여주야 하므로 public을 사용
         System.out.println("학생 정보 등록 메뉴");
         System.out.println("먼저 중복된 학생 정보인지 확인합니다.");
@@ -35,11 +32,8 @@ public class 캡슐화 {
             return false;
         }
         return true;
-
     }
-
     // ex2)
-
     private int age; // private 이기 때문에 보호받고 있음
 
     // getter
@@ -52,7 +46,6 @@ public class 캡슐화 {
             this.age = age;
         }
     }
-
     public static void main(String[] args) {
         캡슐화 p1 = new 캡슐화();
 
