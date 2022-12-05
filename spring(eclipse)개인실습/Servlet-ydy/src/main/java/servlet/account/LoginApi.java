@@ -40,6 +40,10 @@ public class LoginApi extends HttpServlet {
 			return;
 		} // 동일하게 보내줘야 해커가 아이디나 비번을 맞췄는지 알 수 없게 한다.
 		
+		if(user != null && accountService.checkPassword(user, loginUser.get("password"))) {
+			System.out.println("로그인 성공");
+			request.getRequestDispatcher("/WEB-INF/account/mainhome.html").forward(request, response);
+		}
 		
 		// 로그인 성공! 해서 홈페이지나 다른 페이지 이동 -> 로그인 성공 했을 때 session으로 정보를 넣어야한다.
 	}
