@@ -28,12 +28,14 @@ public class LoginApi extends HttpServlet {
 		
 		if(user == null) {
 			System.out.println("아이디 틀림!");
+			request.getRequestDispatcher("/WEB-INF/account/error_login.html").forward(request, response);
 			// error_login.html -> script에서 실행 : 사용자 정보를 확인해 주세요. history.back(); 뒤로가기 해서 다시 로그인 창으로 이동
 			return;
 		}
 		
 		if(!accountService.checkPassword(user, loginUser.get("password"))){ // 비밀번호가 틀렸을 때
 			System.out.println("비밀번호 틀림!");
+			request.getRequestDispatcher("/WEB-INF/account/error_login.html").forward(request, response);
 			// error_login.html -> script에서 실행 : 사용자 정보를 확인해 주세요. history.back(); 뒤로가기 해서 다시 로그인 창으로 이동
 			return;
 		} // 동일하게 보내줘야 해커가 아이디나 비번을 맞췄는지 알 수 없게 한다.
