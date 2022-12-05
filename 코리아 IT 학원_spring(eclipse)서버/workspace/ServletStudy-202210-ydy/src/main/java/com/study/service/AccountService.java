@@ -31,10 +31,11 @@ private static AccountService instance = null;
 		UserRepository.getInstance().saveUser(user);
 	}
 	
+	// 로그인 아이디 확인
 	public User loadUserByUsername(String username) {
 		return UserRepository.getInstance().findUserByUsername(username);
 	}
-	
+	// 로그인 비번 확인
 	public boolean checkPassword(User user, String password){
 		return user.getPassword().equals(password);
 	}

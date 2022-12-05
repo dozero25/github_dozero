@@ -28,7 +28,7 @@ public class RegisterApi extends HttpServlet {
 		if(accountService.isDuplicateUsername(registerParams.get("username"))) {
 			System.out.println("아이디가 중복되었습니다.");
 			request.getRequestDispatcher("/WEB-INF/account/error_username.html").forward(request, response);
-			return;
+			return; // return 안해주면 아래 내용을 계속 실행하게 된다.
 			
 		}
 		
@@ -38,12 +38,13 @@ public class RegisterApi extends HttpServlet {
 				.password(registerParams.get("password"))
 				.name(registerParams.get("name"))
 				.email(registerParams.get("email"))
+				.roles("ROLE_USER, ROLE_ADMIN") // ROLE : 권한을 준다.
 				.build();
 		accountService.register(user);
 		
 		UserRepository.getInstance().showUserAll(); // list에 추가될때마다 확인 가능
 		
-		response.sendRedirect("/login");
+		response.sendRedirect("/login"); // 강제로 /login으로 전달할 날린다.
 	}
 
 }
