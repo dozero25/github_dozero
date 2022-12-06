@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+	
+	<input type="text" class="username">
+	<input type="text" class="password">
+	<input type="text" class="name">
+	
+	<button type="button" class="submit-button">전송</button>
+	
+	
+	<script type="text/javascript">
+		const submitButton = document.querySelector(".submit-button");
+		
+		submitButton.onclick = () => {
+			const username = document.querySelector(".username");
+			const password = document.querySelector(".password");
+			const name = document.querySelector(".name");
+			
+			let user = {
+					username:null,
+					password:null,
+					name:null
+			};
+			
+			user.username = username.value;
+			user.password = password.value;
+			user.name = name.value;
+			
+			let requestData = {
+				async: false, // true 면 비동기 처리, fasle면 동기 처리
+				type: "post",
+				url: "/api/ajax1",
+				data: user,
+				dataType: "text",
+				success: response => {
+					alert("요청 성공!");
+					alert(response)
+				},
+				error: function(response) {
+					alert("요청 실패!");
+				}
+			};
+			
+			$.ajax(requestData);
+			
+			alert("이거 언제 호출됨?"); // 비동기 처리
+			
+			alert("데이터 전송");
+		};
+	</script>
+	
+	
+</body>
+</html>
